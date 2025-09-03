@@ -1,0 +1,47 @@
+{
+  "name": "techstore-demo",
+  "version": "1.0.0",
+  "description": "Modern e-commerce landing page for technology products",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "deploy": "bash deploy.sh",
+    "build": "echo 'Building for production...'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'Linting code...'",
+    "optimize": "echo 'Optimizing assets...'"
+  },
+  "keywords": [
+    "e-commerce",
+    "landing-page",
+    "responsive-design",
+    "javascript",
+    "css3",
+    "html5",
+    "portfolio",
+    "demo",
+    "technology",
+    "shopping-cart"
+  ],
+  "author": {
+    "name": "Franco",
+    "email": "tu-email@ejemplo.com",
+    "url": "https://tu-portfolio.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/techstore-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/techstore-demo/issues"
+  },
+  "homepage": "https://tu-usuario.github.io/techstore-demo",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}
