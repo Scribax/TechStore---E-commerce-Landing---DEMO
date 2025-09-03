@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://tu-usuario.github.io/techstore-demo/sitemap.xml

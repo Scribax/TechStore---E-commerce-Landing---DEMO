@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Tu Tienda de Tecnología | Los Mejores Precios</title>
+    <meta name="description" content="TechStore - La mejor tienda online de tecnología. Encuentra laptops, smartphones, accesorios y más con envío gratis. ¡Ofertas exclusivas!">
+    <meta name="keywords" content="tecnología, laptops, smartphones, accesorios, tienda online, ofertas">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="TechStore - Tu Tienda de Tecnología">
+    <meta property="og:description" content="Los mejores productos de tecnología con precios increíbles y envío gratis">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techstore-demo.com">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">💻</span>
+                        <span class="logo-text">TechStore</span>
+                    </a>
+                    
+                    <ul class="nav-menu">
+                        <li><a href="#productos" class="nav-link">Productos</a></li>
+                        <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
+                        <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <div class="cart-icon" id="cartIcon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16 5 16H17M17 13V17C17 19.2 15.2 21 13 21S9 19.2 9 17V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="cart-count">0</span>
+                        </div>
+                        <button class="menu-toggle" id="menuToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        La Tecnología que 
+                        <span class="gradient-text">Necesitas</span> 
+                        Está Aquí
+                    </h1>
+                    <p class="hero-subtitle">
+                        Descubre los mejores productos de tecnología con precios increíbles. 
+                        <strong>Envío gratis</strong> en compras superiores a $50.000 y 
+                        <strong>garantía extendida</strong> en todos nuestros productos.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary cta-main" onclick="scrollToSection('productos')">
+                            🛍️ Ver Productos
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('ofertas')">
+                            🔥 Ofertas Especiales
+                        </button>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <span class="feature-icon">🚚</span>
+                            <span>Envío Gratis</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🛡️</span>
+                            <span>Garantía 2 años</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💳</span>
+                            <span>12 cuotas sin interés</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-product">
+                        <div class="product-glow"></div>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500" alt="Laptop Gamer" class="hero-laptop">
+                        <div class="floating-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price">$89.999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Satisfacción</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Horas Soporte</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Productos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Productos Destacados</h2>
+                <p class="section-subtitle">Los productos más populares con las mejores ofertas</p>
+            </div>
+
+            <!-- Product Filters -->
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="laptops">Laptops</button>
+                <button class="filter-btn" data-filter="smartphones">Smartphones</button>
+                <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Laptop Gaming -->
+                <div class="product-card" data-category="laptops gaming" data-price="189999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400" alt="Laptop Gaming ROG">
+                        <div class="product-badge">Bestseller</div>
+                        <div class="product-discount">-25%</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView('laptop-gaming')">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Laptop Gaming ROG Strix</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(124 reviews)</span>
+                        </div>
+                        <div class="product-specs">
+                            <span>RTX 4060</span>
+                            <span>16GB RAM</span>
+                            <span>1TB SSD</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-old">$249.999</span>
+                            <span class="price-current">$189.999</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="laptop-gaming" data-price="189999">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- iPhone -->
+                <div class="product-card" data-category="smartphones" data-price="299999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400" alt="iPhone 15 Pro">
+                        <div class="product-badge hot">🔥 Hot</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView('iphone-15')">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Pro Max</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(89 reviews)</span>
+                        </div>
+                        <div class="product-specs">
+                            <span>256GB</span>
+                            <span>Titanio</span>
+                            <span>5G</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-current">$299.999</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="iphone-15" data-price="299999">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MacBook -->
+                <div class="product-card" data-category="laptops" data-price="429999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400" alt="MacBook Pro M3">
+                        <div class="product-badge premium">Premium</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView('macbook-m3')">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">MacBook Pro M3 16"</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(156 reviews)</span>
+                        </div>
+                        <div class="product-specs">
+                            <span>M3 Pro</span>
+                            <span>32GB RAM</span>
+                            <span>1TB SSD</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-current">$429.999</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="macbook-m3" data-price="429999">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Gaming Setup -->
+                <div class="product-card" data-category="gaming accesorios" data-price="79999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=400" alt="Setup Gaming">
+                        <div class="product-badge">Oferta</div>
+                        <div class="product-discount">-30%</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView('gaming-setup')">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Setup Gaming Completo</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(67 reviews)</span>
+                        </div>
+                        <div class="product-specs">
+                            <span>Teclado RGB</span>
+                            <span>Mouse Gamer</span>
+                            <span>Headset</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-old">$114.999</span>
+                            <span class="price-current">$79.999</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="gaming-setup" data-price="79999">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Smartphone Android -->
+                <div class="product-card" data-category="smartphones" data-price="149999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" alt="Samsung Galaxy S24">
+                        <div class="product-badge new">Nuevo</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView('galaxy-s24')">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Samsung Galaxy S24 Ultra</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(203 reviews)</span>
+                        </div>
+                        <div class="product-specs">
+                            <span>512GB</span>
+                            <span>S Pen</span>
+                            <span>200MP</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-current">$149.999</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="galaxy-s24" data-price="149999">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- AirPods -->
+                <div class="product-card" data-category="accesorios" data-price="89999">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400" alt="AirPods Pro">
+                        <div class="product-badge trending">Trending</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openQuickView('airpods-pro')">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">AirPods Pro 2da Gen</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(312 reviews)</span>
+                        </div>
+                        <div class="product-specs">
+                            <span>Noise Canceling</span>
+                            <span>Spatial Audio</span>
+                            <span>30h Batería</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="price-current">$89.999</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="airpods-pro" data-price="89999">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="ofertas" class="offers">
+        <div class="container">
+            <div class="offers-content">
+                <div class="offer-main">
+                    <h2 class="offer-title">🔥 Mega Sale Tecnología</h2>
+                    <p class="offer-subtitle">Hasta 50% de descuento en productos seleccionados</p>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Días</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Horas</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Min</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Seg</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-large offer-cta">
+                        🛒 Aprovecha las Ofertas
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por Qué Elegir TechStore?</h2>
+                <p class="section-subtitle">Más que una tienda, somos tu partner tecnológico</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Envío Express Gratis</h3>
+                    <p>Recibe tus productos en 24-48hs sin costo adicional en compras mayores a $50.000</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Garantía Extendida</h3>
+                    <p>2 años de garantía completa en todos los productos con servicio técnico especializado</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Financiación Flexible</h3>
+                    <p>Hasta 12 cuotas sin interés con todas las tarjetas. También aceptamos transferencias</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Productos Premium</h3>
+                    <p>Solo trabajamos con marcas reconocidas mundialmente y productos originales</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Asistencia técnica especializada disponible todos los días del año</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Cambios Sin Complicaciones</h3>
+                    <p>30 días para cambios y devoluciones. Tu satisfacción es nuestra prioridad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+                <p class="section-subtitle">Más de 50,000 clientes satisfechos nos respaldan</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Increíble experiencia de compra. Compré una laptop gaming y llegó al día siguiente. El soporte técnico es excepcional y los precios son imbatibles."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Carlos Mendez" class="author-image">
+                        <div class="author-info">
+                            <h4>Carlos Méndez</h4>
+                            <span>Desarrollador Software</span>
+                            <div class="author-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"La mejor decisión fue comprar mi iPhone aquí. Precio competitivo, garantía real y el servicio post-venta es fantástico. Definitivamente recomiendo TechStore."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100" alt="Ana Rodriguez" class="author-image">
+                        <div class="author-info">
+                            <h4>Ana Rodríguez</h4>
+                            <span>Diseñadora UX</span>
+                            <div class="author-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Setup gaming completo a un precio increíble. La calidad es excelente y el envío fue súper rápido. Ya hice mi segunda compra y seguiré siendo cliente."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Miguel Torres" class="author-image">
+                        <div class="author-info">
+                            <h4>Miguel Torres</h4>
+                            <span>Gamer Pro</span>
+                            <div class="author-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>🎯 No Te Pierdas Ninguna Oferta</h2>
+                    <p>Sé el primero en conocer nuestras ofertas exclusivas y nuevos productos. 
+                       <strong>¡Además recibes 10% de descuento</strong> en tu primera compra!</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu email aquí..." required class="newsletter-input">
+                        <button type="submit" class="btn btn-primary newsletter-btn">
+                            Suscribirme Gratis
+                        </button>
+                    </div>
+                    <p class="newsletter-disclaimer">
+                        ✅ Sin spam. Solo ofertas exclusivas. Cancelar cuando quieras.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>¿Necesitas Ayuda?</h2>
+                    <p>Nuestro equipo de expertos está listo para ayudarte a encontrar la tecnología perfecta para ti.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-info">
+                                <h4>Teléfono</h4>
+                                <p>+54 11 5555-0123</p>
+                                <span>Lun-Vie 9:00-21:00, Sáb 10:00-18:00</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-info">
+                                <h4>WhatsApp</h4>
+                                <p>+54 9 11 5555-0123</p>
+                                <span>Respuesta en menos de 1 hora</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p>soporte@techstore.com</p>
+                                <span>Respuesta en menos de 2 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <h3>Consulta Personalizada</h3>
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="product">¿Qué producto te interesa?</label>
+                        <select id="product" name="product" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="smartphones">Smartphones</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="accesorios">Accesorios</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Cuéntanos más sobre lo que necesitas</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        Enviar Consulta
+                    </button>
+                    <p class="form-disclaimer">
+                        📞 Te contactaremos en menos de 1 hora para ofrecerte la mejor solución personalizada
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">💻</span>
+                        <span class="logo-text">TechStore</span>
+                    </div>
+                    <p>Tu tienda de confianza para tecnología de última generación con los mejores precios del mercado.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Garantías</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Trabajá con Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Todos los derechos reservados. | Diseñado por <strong>Franco Demartos</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <div class="empty-icon">🛒</div>
+                <p>Tu carrito está vacío</p>
+                <span>Agrega algunos productos increíbles</span>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: $<span id="cartTotal">0</span></span>
+            </div>
+            <button class="btn btn-primary btn-large checkout-btn" id="checkoutBtn" disabled>
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-message"></span>
+            <button class="toast-close">&times;</button>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

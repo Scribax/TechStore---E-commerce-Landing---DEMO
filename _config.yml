@@ -1,0 +1,38 @@
+# GitHub Pages Configuration for TechStore
+title: "TechStore - E-commerce Demo"
+description: "Modern e-commerce landing page showcasing technology products"
+url: "https://tu-usuario.github.io"
+baseurl: "/techstore-demo"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - deploy.sh
+  - node_modules/
+  - .gitignore
+
+# Include files
+include:
+  - _headers
+  - _redirects
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+author: Franco
+twitter:
+  username: tu_usuario
+social:
+  name: Franco
+  links:
+    - https://github.com/tu-usuario
+    - https://linkedin.com/in/tu-usuario
